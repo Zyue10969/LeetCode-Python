@@ -11,7 +11,7 @@ class Solution(object):
             ai = height[i]
             for j in range(i + 1, len(height)):
                 aj = height[j]
-                max_water = max(max_water, (j - i) * (min(ai, aj) + 0.5 * abs(aj - ai)))
+                max_water = max(max_water, (j - i) * min(ai, aj))
         return max_water
         
                 
