@@ -20,9 +20,9 @@ class Solution(object):
         while low < high:
             if height[low] <= height[high]:
                 max_water = max(max_water, (high - low) * height[low])
-                low =+ 1
+                low += 1
             else:
                 max_water = max(max_water, (high - low) * height[high])
-                high =- 1
+                high -= 1
         return max_water
                 
