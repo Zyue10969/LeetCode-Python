@@ -18,8 +18,8 @@ def threeSumClosest(nums, target):
                     return sum
                 if abs(target - sum) < abs(target - closet_sum):
                     closet_sum = sum
-                if sum < target:   # 增加sum的值
+                if sum < target:  # 增加sum的值
                     j += 1
-                if sum > target:　# 降低sum的值
+                if sum > target:  # 降低sum的值
                     k -= 1
         return closet_sum
