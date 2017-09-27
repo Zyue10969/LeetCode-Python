@@ -1,5 +1,5 @@
 # -*- coding:utf-8 -*-
-def threeSumClosest(self, nums, target):
+def threeSumClosest(nums, target):
         """
         :type nums: List[int]
         :type target: int
