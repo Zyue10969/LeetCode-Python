@@ -18,6 +18,9 @@ class Solution(object):
         # 通过这种方法我们就可以找到哪些元素没有出现。
         # 在取负的过程中，如果发现要取负的位置已经为负，
         # 说明这个元素已经出现过，也即该元素出现了两次，我们可以将该元素保留下来。
+        #  index= [0, 1, 2, 3, 4, 5, 6, 7]
+        #  nums = [4, 3, 2, 7, 8, 2, 3, 1] 
+        #negnums=[-4,-3, -2,-7,8, 2,-3,-1]
         for i in xrange(len(nums)):
             index = abs(nums[i]) - 1
             nums[index] = - abs(nums[index])
