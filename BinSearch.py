@@ -1,6 +1,4 @@
 # -*- coding:utf-8 -*-
-from __future__ import division
-
 def BinSearch(list, key, low, high):
     """
     list: 有序表
@@ -8,11 +6,11 @@ def BinSearch(list, key, low, high):
     low: low索引
     high: high索引
     """
-    mid = (low + high) // 2
+    mid = (low + high) / 2
     if low > high:
-        exit("找不到: {}".format(key))
+        return -1
     elif key == list[mid]:
-        return list[mid], mid
+        return mid
     elif key > list[mid]:
         return BinSearch(list, key, mid + 1, high) #　递归
     elif key < list[mid]:
